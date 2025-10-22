@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحتي الشخصية</title>
+    <style>
+        /* الصفحة ممتلئة الشاشة وتوسيط المحتوى */
+        body {
+            display: flex;
+            justify-content: center; /* لمركز أفقي */
+            align-items: center;     /* لمركز عمودي */
+            height: 90vh;           /* ارتفاع كامل الشاشة */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdfdfd; /* خلفية الصفحة */
+            flex-direction: column; /* ترتيب العناصر عموديًا */
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-style: italic;
+            color: #020202c7;
+        }
+
+        h2, h3 {
+            color: #0d0d0ec7;
+            margin: 8px 0;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #192363;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a.button:hover {
+            background-color: #000000;
+        }
+
+        /* متجاوبة على الشاشات الصغيرة */
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            a.button {
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>مرحباً بكم في صفحتي</h1>
+    <h2>اسم الطالب: نوح بن خميس بن مرهون الهطالي</h2>
+    <h3>الصف: ٤/١٠</h3>
+    <a href="hobbies.html" class="button">اضغط هنا لعرض هوايتي</a>
+</body>
+</html>
